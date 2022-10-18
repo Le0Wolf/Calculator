@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Калькулятор";
+}
+
+<div style="margin: auto; width: fit-content">
+    <p>Введитие выражение для вычисления</p>
+    <form method="post">
+        <input asp-for="Expression" />
+        <input type="submit" />
+    </form>
+    <p>@Model.Message</p>
+</div>
